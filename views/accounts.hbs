@@ -1,0 +1,10 @@
+<h1>List of Contacts!</h1>
+{{#if users.length}}
+<ul>
+{{#each users}}
+<li><a href="/accounts/{{id}}">{{username}}</a></li>
+{{/each}}
+</ul>
+{{else}}
+<p>THERE ARE NO USERS ACCOUNTS</p>
+{{/if}}
